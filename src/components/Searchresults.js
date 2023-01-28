@@ -83,7 +83,11 @@ class SearchResults extends React.Component {
             <option>Hyderabad</option>
             <option>Bangalore</option>
             <option>Chennai</option>
+            <option>Kolkata</option>
             <option>Mumbai</option>
+            <option>Pune</option>
+            <option>Delhi</option>
+            <option>Kerala</option>
           </select>
         </div>
 
