@@ -1,0 +1,143 @@
+.searchItemResultDetailMain {
+  background-color: #000000;
+}
+
+.searchItemResultDetail {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forAnimation {
+  animation: hideMe 2s forwards;
+}
+@keyframes hideMe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.skillDiv1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skillDivIndividual {
+  width: 33%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.skillDivIndividual strong {
+  padding-left: 20px;
+}
+.LifeAtCompanyDiv1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.LifeAtCompanyDiv1 p {
+  width: 60%;
+  color: #cbd5e1;
+  font-family: roboto;
+}
+.LifeAtCompanyDiv1 img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+.searchItemDetailfirst {
+  display: contents;
+}
+.similarJobDiv h2 {
+  width: 85%;
+  margin: 0;
+  background-color: #000000;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: roboto;
+}
+
+.similarJobDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: roboto;
+}
+
+.AllSimilarJobItems {
+  background-color: #272727;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: roboto;
+  width: 30%;
+  height: 350px;
+}
+
+.similarJobResultsDiv {
+  width: 90%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.similarJobMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.similarJobDescription p {
+  color: #cbd5e1;
+  font-family: roboto;
+  font-size: 14px;
+}
+.loacationDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.loacationDiv span {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #cbd5e1;
+}
+.loacationDiv1 {
+  margin-left: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.siteVisit {
+  display: flex;
+  justify-content: space-between;
+}
+.siteVisit a {
+  color: #b6c5ff;
+  text-decoration: none;
+}
+.Loader3 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.similarJobItemLink {
+  text-decoration: none;
+}
+.similarJobItemLink strong {
+  color: #ffffff;
+}
+.dummy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}

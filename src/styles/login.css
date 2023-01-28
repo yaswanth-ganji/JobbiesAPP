@@ -1,0 +1,74 @@
+.loginDiv {
+  /* background-color: #ebebf7; */
+  background-color: #272727;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginBody {
+  background: linear-gradient(120deg, #272727, transparent);
+  /* background: linear-gradient(120deg, #2980b9, #8e44ad); */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginForm input {
+  width: 250px;
+  height: 28px;
+  border: none;
+  border-bottom: 1px solid silver;
+  background: none;
+  outline: none;
+  color: #ffffff;
+}
+
+.loginBody button {
+  width: 260px;
+  height: 45px;
+  /* background-color: rgb(18, 178, 247); */
+  background-color: #6366f1;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: #4f46e5;
+}
+h3 {
+  border-bottom: 1px solid silver;
+  width: 250px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.errMsg {
+  color: red;
+}
+input:focus {
+  border-bottom: 1.5px solid rgb(169, 167, 167);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* @media only screen and(min-width: 480px){
+
+} */

@@ -1,0 +1,33 @@
+.headerDiv {
+  background-color: #272727;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: roboto;
+}
+.spanDiv span {
+  margin: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  /* font-size: 15px; */
+}
+.spanDiv a {
+  text-decoration: none;
+  flex-basis: 400px;
+}
+
+.headerDiv button {
+  background-color: #6366f1;
+  padding: 6px 20px;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.headerDiv h2 {
+  color: #ffffff;
+}
+.appLogo {
+  cursor: pointer;
+}

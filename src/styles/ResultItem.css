@@ -1,0 +1,70 @@
+.titleDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+.ImgDiv {
+  display: flex;
+  padding-bottom: 30px;
+}
+.packageDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.locationDiv span {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #cbd5e1;
+}
+
+.ResultDetail {
+  border-bottom: 1.5px solid #7e858e;
+  padding-bottom: 20px;
+}
+.ResultDiv,
+.skillDiv,
+.LifeAtCompanyDiv {
+  border-radius: 10px;
+  background-color: #272727;
+  width: 80%;
+  margin: 10px;
+  padding: 30px;
+  color: #ffffff;
+  font-family: roboto;
+}
+.ResultDiv:hover {
+  cursor: pointer;
+}
+.ResultDescription p {
+  color: #cbd5e1;
+  font-size: 14px;
+  font-family: roboto;
+}
+.ResultDescription {
+  padding-top: 20px;
+}
+.salaryDiv {
+  font-weight: bolder;
+}
+.RatingDiv,
+.locationDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.RatingDiv strong {
+  padding-left: 3px;
+  padding-top: 3px;
+}
+.locationDiv1 {
+  margin-left: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.searchResultItemLink {
+  text-decoration: none;
+}

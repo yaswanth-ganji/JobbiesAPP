@@ -1,0 +1,19 @@
+.MobileView {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #cbd5e1;
+  font-family: roboto;
+  color: #7e858e;
+  /* color: #7e858e; */
+}
+.MobileView h2 {
+  padding: 30px;
+  margin: 0;
+}
+.MobileView h1 {
+  margin: 0;
+}

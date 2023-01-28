@@ -1,0 +1,18 @@
+.NotFoundDiv {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: roboto;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.NotFoundDiv p {
+  font-size: 30px;
+  font-weight: 550;
+}
+.NotFoundDiv span {
+  color: #cbd5e1;
+}
