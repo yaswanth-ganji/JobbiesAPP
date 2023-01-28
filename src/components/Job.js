@@ -86,7 +86,7 @@ class Job extends React.Component {
     }
 
     return (
-      <>
+      <div style={{ height: "100vh", background: "#000000" }}>
         <Header />
         <div className="jobDiv">
           <div className="withApplyBtn">
@@ -107,7 +107,7 @@ class Job extends React.Component {
             />
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }
