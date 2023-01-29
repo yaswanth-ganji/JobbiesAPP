@@ -123,6 +123,15 @@
   color: #b6c5ff;
   text-decoration: none;
 }
+.LifeAtCompanyDiv a {
+  color: #b6c5ff;
+  text-decoration: none;
+}
+.visitPage {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
 .Loader3 {
   height: 100vh;
   display: flex;

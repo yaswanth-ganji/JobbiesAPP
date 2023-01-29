@@ -19,7 +19,11 @@ class SimilarjobItem extends React.Component {
 
     return (
       <div className="AllSimilarJobItems">
-        <Link to={`/Jobs/${id}`} className="similarJobItemLink">
+        <a
+          href={`/Jobs/${id}`}
+          onClick={this.props.forCompRender()}
+          className="similarJobItemLink"
+        >
           <div className="dummy">
             <div className="ImgDiv">
               <img
@@ -49,7 +53,7 @@ class SimilarjobItem extends React.Component {
               </div>
             </div>
           </div>
-        </Link>
+        </a>
       </div>
     );
   }

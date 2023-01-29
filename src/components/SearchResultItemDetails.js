@@ -13,6 +13,13 @@ class SearchResultItemDetail extends React.Component {
     ResultDetail: [],
     similarJobs: [],
     Loader: true,
+    x: true,
+  };
+
+  forCompRender = () => {
+    this.setState({
+      x: !this.state.x,
+    });
   };
   componentDidMount() {
     const JwtToken = Cookie.get("JobbyjwtToken");
@@ -38,6 +45,7 @@ class SearchResultItemDetail extends React.Component {
   }
 
   render() {
+    console.log(this.state.x);
     const jwtToken = Cookie.get("JobbyjwtToken");
     if (jwtToken === undefined) {
       return <Redirect to="/login" />;
@@ -65,7 +73,13 @@ class SearchResultItemDetail extends React.Component {
     );
 
     const similarJobs = this.state.similarJobs.map((eachItem) => {
-      return <SimilarjobItem key={eachItem.id} similarJobsData={eachItem} />;
+      return (
+        <SimilarjobItem
+          forCompRender={() => this.forCompRender}
+          key={eachItem.id}
+          similarJobsData={eachItem}
+        />
+      );
     });
 
     return (
@@ -93,6 +107,14 @@ class SearchResultItemDetail extends React.Component {
                 <div className="skillDiv">
                   <div className="siteVisit">
                     <strong>Skills</strong>
+                  </div>
+
+                  <div className="skillDiv1">{AllSkills}</div>
+                </div>
+
+                <div className="LifeAtCompanyDiv ">
+                  <div className="visitPage">
+                    <strong>Life at Company</strong>
                     <a href={this.state.ResultDetail.company_website_url}>
                       visit
                       <img
@@ -103,12 +125,6 @@ class SearchResultItemDetail extends React.Component {
                       />
                     </a>
                   </div>
-
-                  <div className="skillDiv1">{AllSkills}</div>
-                </div>
-
-                <div className="LifeAtCompanyDiv ">
-                  <strong>Life at Company</strong>
 
                   {LifeAtCompany}
                 </div>
