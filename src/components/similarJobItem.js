@@ -2,7 +2,7 @@ import React from "react";
 import Rating from "../styles/Rating.png";
 import Location from "../styles/location.png";
 import Employment from "../styles/employment.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 class SimilarjobItem extends React.Component {
   render() {
@@ -19,6 +19,7 @@ class SimilarjobItem extends React.Component {
 
     return (
       <div className="AllSimilarJobItems">
+        {/* a tag is used in place of Link */}
         <a
           href={`/Jobs/${id}`}
           onClick={this.props.forCompRender()}
