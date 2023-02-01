@@ -6,6 +6,7 @@ import Searchresults from "./Searchresults";
 import Cookie from "js-cookie";
 import { Redirect } from "react-router-dom";
 import Pagination from "./Pagination";
+//just
 class Job extends React.Component {
   state = {
     searchResultData: [],
