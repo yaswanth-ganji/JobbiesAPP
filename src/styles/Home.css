@@ -23,7 +23,7 @@
   width: 500px;
 }
 .homeContent button {
-  background-color: #6366f1;
+  background-color: #4f46e5;
   padding: 15px 25px;
   border: none;
   color: #ffffff;
@@ -32,5 +32,5 @@
   margin-top: 15px;
 }
 button:hover {
-  background-color: #4f46e5;
+  background-color: #6366f1;
 }

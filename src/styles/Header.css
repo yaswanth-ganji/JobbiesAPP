@@ -18,12 +18,15 @@
 }
 
 .headerDiv button {
-  background-color: #6366f1;
+  background-color: #4f46e5;
   padding: 6px 20px;
   border: none;
   color: #ffffff;
   font-weight: 600;
   border-radius: 5px;
+}
+.headerDiv button:hover {
+  background-color: #6366f1;
 }
 .headerDiv h2 {
   color: #ffffff;

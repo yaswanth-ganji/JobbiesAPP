@@ -162,7 +162,7 @@
   color: #cbd5e1;
 }
 .applyBtn {
-  background-color: #6366f1;
+  background-color: #4f46e5;
   padding: 6px 20px;
   border: none;
   color: #ffffff;
@@ -173,10 +173,12 @@
   padding-top: 12px;
   padding-bottom: 12px;
 }
-
+.applyBtn:hover {
+  background-color: #6366f1;
+}
 .locationSelect {
   height: 35px;
-  width: 150px;
+  width: 160px;
   border-radius: 5px;
   border: 1.5px solid #7e858e;
   background-color: #272727;

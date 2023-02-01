@@ -42,15 +42,15 @@
   width: 260px;
   height: 45px;
   /* background-color: rgb(18, 178, 247); */
-  background-color: #6366f1;
+  background-color: #4f46e5;
   color: #ffffff;
   border-radius: 10px;
   border: none;
   font-weight: bold;
   margin-top: 20px;
 }
-button:hover {
-  background-color: #4f46e5;
+.loginBody button:hover {
+  background-color: #6366f1;
 }
 h3 {
   border-bottom: 1px solid silver;

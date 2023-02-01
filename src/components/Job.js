@@ -5,9 +5,11 @@ import Searchfilter from "./Searchfilter";
 import Searchresults from "./Searchresults";
 import Cookie from "js-cookie";
 import { Redirect } from "react-router-dom";
+import Pagination from "./Pagination";
 class Job extends React.Component {
   state = {
     searchResultData: [],
+    searchResultDataPerPage: [],
     Loader: true,
     salaryData: null,
     checkBoxData: [],
@@ -72,13 +74,25 @@ class Job extends React.Component {
         return res.json();
       })
       .then((jsonBody) => {
-        this.setState({ searchResultData: jsonBody.jobs, Loader: false });
+        this.setState({
+          searchResultData: jsonBody.jobs,
+          searchResultDataPerPage: jsonBody.jobs.slice(0, 5),
+          Loader: false,
+        });
       })
       .catch((err) => {
         console.log("errorTriggerd", err);
       });
   };
 
+  pageHandler = (pageNumber) => {
+    this.setState({
+      searchResultDataPerPage: this.state.searchResultData.slice(
+        pageNumber * 5 - 5,
+        pageNumber * 5
+      ),
+    });
+  };
   render() {
     const jwtToken = Cookie.get("JobbyjwtToken");
     if (jwtToken === undefined) {
@@ -102,9 +116,15 @@ class Job extends React.Component {
             <Searchresults
               getDynamicData={this.dynamicApi}
               Loader={this.state.Loader}
-              searchResultData={this.state.searchResultData}
+              searchResultData={this.state.searchResultDataPerPage}
               SearchBarData={this.onSearchBarData}
             />
+            {!this.state.Loader && (
+              <Pagination
+                searchResultData={this.state.searchResultData}
+                pageHandler={this.pageHandler}
+              />
+            )}
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import Jobby from "./components/Jobby";
 import { BrowserView, MobileView } from "react-device-detect";
 import "./components/Mobileview.css";
-// import Screensize from "./Screensize";
+
 class App extends React.Component {
   render() {
     return (
